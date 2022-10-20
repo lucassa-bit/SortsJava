@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class QuickSort {
+class QuickSortLeft {
     int partition(int array[], int low, int high) {
         if (low < high) {
             System.out.println(String.format("Começo: %d, Fim: %d\n", low, high) +
@@ -56,7 +56,7 @@ class QuickSort {
         int array[] = { 13, 19, 9, 5, 12, 8 };
         int n = array.length;
 
-        QuickSort ob = new QuickSort();
+        QuickSortLeft ob = new QuickSortLeft();
 
         System.out.println("== VALOR INICIAL ==\n" + Arrays.toString(array));
 
