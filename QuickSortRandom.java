@@ -15,6 +15,9 @@ public class QuickSortRandom {
         random(array, low, high);
         int pivot = array[high];
 
+        System.out.println(String.format("Começo: %d, Fim: %d\n", low, high) +
+                    "-------------------------\n");
+
         int i = (low - 1);
         for (int j = low; j < high; j++) {
             if (array[j] < pivot) {
@@ -48,9 +51,9 @@ public class QuickSortRandom {
         }
     }
 
-    // Driver Code
     public static void main(String args[]) {
-        int array[] = { 10, 7, 8, 9, 1, 5 };
+        //int array[] = { 5, 2, 6, 1, 3, 4 };
+        int array[] = { 13, 19, 9, 5, 12, 8 };
         int n = array.length;
 
         System.out.println("== VALOR INICIAL ==\n" + Arrays.toString(array));
